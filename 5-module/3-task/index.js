@@ -5,7 +5,7 @@ function initCarousel() {
   let slidesArrayLength = document.querySelectorAll(".carousel__slide").length;
 
   let counter = 1;
-  let slideWidth = 988;
+  let slideWidth = 500;
   let position = 0;
 
   rightButton.addEventListener("click", function () {
@@ -34,4 +34,5 @@ function initCarousel() {
     rightButton.style.display = (counter === slidesArrayLength) ? 'none' : '';
     leftButton.style.display = (counter === 1) ? 'none' : '';
   };
+
 }
