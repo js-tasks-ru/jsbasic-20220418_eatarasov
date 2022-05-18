@@ -102,6 +102,7 @@ describe('5-module-3-task', () => {
       carouselArrowRight.dispatchEvent(clickEvent);
 
       expect(carouselInner.style.transform).toBe("translateX(-500px)");
+
     });
   });
 
