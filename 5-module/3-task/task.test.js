@@ -101,7 +101,7 @@ describe('5-module-3-task', () => {
     it('при клике по кнопке "вперёд", должна переключать на один слайд вперёд', () => {
       carouselArrowRight.dispatchEvent(clickEvent);
 
-      expect(carouselInner.style.transform).toBe("translateX(-988px)");
+      expect(carouselInner.style.transform).toBe("translateX(-500px)");
     });
   });
 
@@ -115,7 +115,7 @@ describe('5-module-3-task', () => {
     it('при клике по кнопке "назад", должна переключать на один слайд назад', () => {
       carouselArrowLeft.dispatchEvent(clickEvent);
 
-      expect(carouselInner.style.transform).toBe('translateX(-1976px)');
+      expect(carouselInner.style.transform).toBe('translateX(-1000px)');
     });
   });
 
