@@ -102,6 +102,10 @@ describe('5-module-3-task', () => {
       carouselArrowRight.dispatchEvent(clickEvent);
 
       expect(carouselInner.style.transform).toBe("translateX(-500px)");
+<<<<<<< HEAD
+=======
+
+>>>>>>> acf876b6783b735cc79725ef68de2deaca774eee
     });
   });
 
