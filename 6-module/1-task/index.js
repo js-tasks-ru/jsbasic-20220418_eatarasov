@@ -34,45 +34,6 @@ let rows = [
   }
 ];
 
-
-// function renderTable(rows){
-//
-//   let div = document.createElement("div");
-//   let table = document.createElement("table");
-//   let thead = document.createElement("thead");
-//   let tbody = document.createElement("tbody");
-//   thead.innerHTML = `
-//     <tr>
-//           <th>Имя</th>
-//           <th>Возраст</th>
-//           <th>Зарплата</th>
-//           <th>Город</th>
-//           <th></th>
-//         </tr>
-//   `;
-//   table.appendChild(thead);
-//   table.appendChild(tbody);
-//
-//   rows.forEach(item => {
-//     let tr = document.createElement("tr");
-//     tr.innerHTML = `
-//       <td>${item.name}</td>
-//       <td>${item.age}</td>
-//       <td>${item.salary}</td>
-//       <td>${item.city}</td>
-//       <td><button>X</button></td>
-//     `;
-//     tbody.appendChild(tr);
-//   });
-//
-//   div.appendChild(table);
-//
-//   document.body.appendChild(div);
-// }
-//
-// renderTable(rows);
-//document.body.append(renderTable(rows));
-
 export default class UserTable {
   elem;
 
