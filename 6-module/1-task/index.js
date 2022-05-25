@@ -47,15 +47,14 @@ export default class UserTable {
     return this.elem;
   }
 
-  renderTable(){
+  renderTable() {
     this.elem.innerHTML =
-                `<thead>
+      `<thead>
                     <tr>
-                        <th>Имя</th>
+                       <th>Имя</th>
                        <th>Возраст</th>
                        <th>Зарплата</th>
                        <th>Город</th>
-                       <th></th>
                     </tr>
                 </thead>
                 <tbody>` + this.rows.map(item => `
@@ -69,17 +68,15 @@ export default class UserTable {
                 `).join("") + `</tbody>`;
 
 
-
-
     this.elem.querySelectorAll("button").forEach(btn => {
       btn.addEventListener("click", this.deleteRow);
     });
-}
+  }
 
-deleteRow(event) {
+  deleteRow(event) {
     let row = event.target.parentElement.parentElement;
     row.remove();
-}
+  }
 
 }
 
