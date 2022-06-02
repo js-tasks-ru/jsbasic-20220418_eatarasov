@@ -79,7 +79,6 @@ export default class ProductGrid {
     this.createProductElem(this.filteredProducts);
   };
 
-
 }
 
 function productGridTemolate() {
