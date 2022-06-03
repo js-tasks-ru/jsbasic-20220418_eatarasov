@@ -32,7 +32,7 @@ export default class Cart {
   }
 
   updateProductCount(productId, amount) {
-    debugger;
+
     this.cartItems.map((item => {
       if (item.product.id === productId) {
         item.count += amount;
