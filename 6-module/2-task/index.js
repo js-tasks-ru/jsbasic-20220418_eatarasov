@@ -37,6 +37,7 @@ export default class ProductCard {
 
   }
 
+
   onclickCardEvent = () => {
     const cardEvent = new CustomEvent("product-add",
       {
