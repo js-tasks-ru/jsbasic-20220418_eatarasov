@@ -6,6 +6,7 @@ export default class Cart {
   }
 
   addProduct(product) {
+
     if (product) {
       const obj = this.cartItems.find((prod) => prod.product.id === product.id);
       if (obj) {
@@ -17,8 +18,6 @@ export default class Cart {
         });
       }
       else {
-
-
         this.cartItem = {
           product: product,
           count: 1
@@ -33,6 +32,7 @@ export default class Cart {
   }
 
   updateProductCount(productId, amount) {
+
     this.cartItems.map((item => {
       if (item.product.id === productId) {
         item.count += amount;
